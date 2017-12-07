@@ -1,0 +1,45 @@
+.output-container {
+    width: calc(100% - 6em);
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 3em;
+    text-align: left;
+}
+
+.output-container .origin {
+    padding-bottom: 2em;
+}
+
+.output-container .destination {
+    padding-bottom: 6em;
+}
+
+.output-container .origin div,
+.output-container .destination div {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 1.5em;
+    color: #000000;
+}
+
+.output-container .origin div:first-child,
+.output-container .destination div:first-child {
+    font-weight: 700;
+}
+
+.output-container .distance {
+    border-top: 2px solid #000000;
+    padding: 2em 0;
+}
+.output-container .distance div {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.output-container .distance .quip {
+    font-size: 1.5em;
+    padding-top: 1em;
+    font-weight: 100;
+}

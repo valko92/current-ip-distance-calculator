@@ -1,0 +1,66 @@
+.distance-form {
+    width: 100%; height: auto;
+    padding-top: 3em;
+}
+
+.input-container {
+    text-align: left;
+    margin: 0 auto;
+}
+@media (min-width: 768px) {
+    .input-container {
+        max-width: 50%;
+    }
+}
+@media (min-width: 1366px) {
+    .input-container {
+        max-width: 30%;
+    }
+}
+
+.input-container:nth-child(2) {
+    margin-bottom: 10em;
+}
+
+.input-container label {
+    display: block;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    color: #000000;
+    width: 100%;
+    padding-bottom: 1.5em;
+    position: relative;
+}
+
+.input-container input {
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    color: #000000;
+    width: 100%;
+    border: 2px solid #000000;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 4em;
+    position: relative;
+}
+
+.submit-button {
+    background-color: #FFFFFF;
+    box-shadow: none;
+    border: 2px solid #000;
+    border-radius: 0;
+    padding: 1em; margin: 1em;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    color: #000000;
+    transition: background-color 200ms ease-in-out 50ms, color 200ms ease-in-out 50ms;
+}
+
+.submit-button:active {
+    background-color: #4a4a4a;
+    color: #FFFFFF;
+    cursor: pointer;
+}
