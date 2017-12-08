@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Form from './Form';
 import Output from './Output';
 import '../styles/App.css';
-import dummyData from '../data/dummy.json';
 
 class App extends Component {
   constructor(props) {
@@ -16,9 +15,15 @@ class App extends Component {
   }
 
   getData(origin, destination) {
-    this.setState({
-      outputTime: true,
-      output: dummyData
+    fetch(`http://localhost:3001/distance?origin=${origin}&destination=${destination}`)
+    .then((response) => response.json())
+    .then((response) => {
+      this.setState({
+        outputTime: true,
+        output: response
+      });
+    }).catch(function(error) {
+        console.log(` Error fetching distance ${error.message}`);
     });
   }
 

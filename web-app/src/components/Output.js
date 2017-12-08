@@ -2,8 +2,8 @@ import React from 'react';
 import '../styles/Output.css';
 
 const distanceQuip= dist => {
-    console.log(parseInt(dist, 10) > 10);
-    let numDist = parseInt(dist, 10);
+    let distParsed = dist.split(' min')[0];
+    let numDist = parseInt(distParsed, 10);
     let quip = '';
 
     switch(true) {
@@ -25,16 +25,14 @@ const Output = (props) => {
         <div className="output-container">
             <div className="origin">
                 <div>Origin (Where are you leaving from?)</div>
-                <div>{props.origin1}</div>
-                <div>{props.origin2}</div>
+                <div>{props.origin}</div>
             </div>
             <div className="destination">
                 <div>Destination (Where are you going?)</div>
-                <div>{props.destination1}</div>
-                <div>{props.destination2}</div>
+                <div>{props.destination}</div>
             </div>
             <div className="distance">
-                <div>{props.distance} minutes</div>
+                <div>{props.distance}</div>
                 <div className="quip">{distanceQuip(props.distance)}</div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-# Valeriya Kozhynova | Current Senior Frontend Code Assessment
+# Valeriya Kozhynova | Current | Senior Frontend Code Assessment
 
 ## Front End Web App
 

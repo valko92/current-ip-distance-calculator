@@ -1,7 +1,5 @@
 {
-    "origin1": "100 Test Street",
-    "origin2": "City, ST, 00000",
-    "destination1": "100 Test Street",
-    "destination2": "City, ST, 00000",
-    "distance": "20"
+    "origin": "100 Test Street, City, ST, 00000",
+    "destination": "100 Test Street, City, ST, 00000",
+    "distance": "20 min"
 }
