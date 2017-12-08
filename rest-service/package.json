@@ -20,6 +20,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "test": "mocha --timeout 10000"
+    "test": "mocha --timeout 10000",
+    "deploy": "cd .. && git subtree push --prefix rest-service heroku master"
   }
 }

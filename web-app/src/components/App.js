@@ -15,7 +15,7 @@ class App extends Component {
   }
 
   getData(origin, destination) {
-    fetch(`http://localhost:3001/distance?origin=${origin}&destination=${destination}`)
+    fetch(`https://connect-ip-distance.herokuapp.com/distance?origin=${origin}&destination=${destination}`)
     .then((response) => response.json())
     .then((response) => {
       this.setState({
