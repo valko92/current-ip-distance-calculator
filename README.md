@@ -8,7 +8,7 @@ Since this was a quick assignment, I did not bother with validation on the front
 
 http://val.kozhynov.com/connect-ip-distance/
 
-For the rest service, I realize that my Google API key can be hidden a lot better using environment variables and that there are many different ways to use GraphQL. Also I wrote a small test for the rest service to test its output. It is build onto a free heroku dino:
+For the rest service, I wrote a small test for the rest service to test its output. It is build onto a free heroku dino:
 
 https://connect-ip-distance.herokuapp.com/
 
