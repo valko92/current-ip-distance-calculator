@@ -1,5 +1,6 @@
 {
   "name": "current-code-assessment-frontend-web-app",
+  "homepage": "http://val.kozhynov.com/connect-ip-distance",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
