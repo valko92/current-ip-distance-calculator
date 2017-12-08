@@ -32,9 +32,9 @@ app.get('/distance', function (req, res) {
     });
 });
 
-
-http.listen(3001, function() {
-    console.log('listening on 3001');
+var port = process.env.PORT || 8080;
+http.listen(port, function() {
+    console.log(`listening on ${port}`);
 });
 
 module.exports = app;
