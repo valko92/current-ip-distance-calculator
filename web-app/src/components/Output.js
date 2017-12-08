@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/Output.css';
 
 const distanceQuip= dist => {
+    let quip = '';
     if (dist.indexOf('day') > 0) {
         quip = 'Damn, that\'s far.';
     } else {
