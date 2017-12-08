@@ -28,11 +28,14 @@ module.exports = function(origin, destination, callback) {
             const latLongDest = destinationRes.data.getLocation.location;
 
             // request distance after getting lat and long
-            const o =  latLongOrigin.longitude+","+latLongOrigin.latitude;
-            const d =  latLongDest.longitude+","+latLongDest.latitude;
-            const k = 'AIzaSyAxfw5DbTWK5WJc-YODknJUFAzEjbpIHoY';
+            
+            const o =  latLongOrigin.latitude+","+latLongOrigin.longitude;
+            const d =  latLongDest.latitude+","+latLongDest.longitude;
+            const k = process.env.key;
 
-            request(`https://maps.googleapis.com/maps/api/directions/json?origin=40.8162,-74.2164&destination=40.8162,-74.2164&key=${k}`)
+            console.log(`https://maps.googleapis.com/maps/api/directions/json?origin=${o}&destination=${d}&key=${k}`);
+
+            request(`https://maps.googleapis.com/maps/api/directions/json?origin=${o}&destination=${d}&key=${k}`)
             .then(function(response) {
                 // same schema as dummy.json
                 output = {
