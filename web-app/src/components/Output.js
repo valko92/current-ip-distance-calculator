@@ -2,20 +2,10 @@ import React from 'react';
 import '../styles/Output.css';
 
 const distanceQuip= dist => {
-    let distParsed = dist.split(' min')[0];
-    let numDist = parseInt(distParsed, 10);
-    let quip = '';
-
-    switch(true) {
-        case numDist > 120:
-            quip = 'Damn, that\'s far.';
-            break;
-        case numDist > 30:
-            quip = 'Not too far.';
-            break;
-        default:
-            quip = 'Well, that ain\'t far';
-            break;
+    if (dist.indexOf('day') > 0) {
+        quip = 'Damn, that\'s far.';
+    } else {
+        quip = 'Well, that ain\'t far';
     }
     return quip;
 }
