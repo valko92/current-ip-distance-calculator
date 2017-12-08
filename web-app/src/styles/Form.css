@@ -31,6 +31,7 @@
     width: 100%;
     padding-bottom: 1.5em;
     position: relative;
+    text-align: center;
 }
 
 .input-container input {
@@ -38,12 +39,23 @@
     font-weight: 300;
     font-size: 1.5em;
     color: #000000;
-    width: 100%;
+    width: auto;
     border: 2px solid #000000;
     border-radius: 0;
     box-shadow: none;
+    margin-left: auto; margin-right: auto;
     margin-bottom: 4em;
     position: relative;
+    display: block;
+}
+
+@media (min-width: 1366px) {
+    .input-container label {
+        text-align: left;
+    }
+    .input-container input {
+        width: 100%;
+    }
 }
 
 .submit-button {
